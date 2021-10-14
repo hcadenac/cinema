@@ -56,7 +56,6 @@ def login():
             return redirect('/home/') """
         
         return render_template('formloguin.html', mensaje="Nombre de usuario o contraseña incorrecta.", form=formulario) 
-        #return render_template('formLoguin.html', form=form)
 
 @app.route('/registro/', methods=['GET', 'POST'])
 def registro():
